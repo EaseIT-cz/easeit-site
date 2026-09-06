@@ -12,6 +12,10 @@ Open http://127.0.0.1:8000. Edit copy in `index.html` and styles in `assets/site
 
 ## Publish
 
-Upload **only `index.html` and `assets/`** to your static hosting directory. Do not publish the repository root, which contains local context and Git metadata. Relative asset URLs support subdirectory hosting.
+For GitHub Pages, select **Settings → Pages → Build and deployment → Source → GitHub Actions**. The workflow in `.github/workflows/pages.yml` publishes on pushes to `main`, or manually from the Actions tab. It stages only `index.html` and `assets/`.
+
+The default site URL is https://easeit-cz.github.io/easeit-site/.
+
+For other static hosts, upload **only `index.html` and `assets/`** to your static hosting directory. Do not publish the repository root, which contains local context and Git metadata. Relative asset URLs support subdirectory hosting.
 
 Pico CSS is vendored in `assets/vendor/` with its MIT license. Local working context is indexed in `.context/README.md` and intentionally ignored by Git. Shared agent guidance is in `AGENTS.md`.

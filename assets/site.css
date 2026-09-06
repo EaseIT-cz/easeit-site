@@ -53,7 +53,7 @@ h2 { font-size: clamp(2rem, 4vw, 2.65rem); line-height: 1.15; letter-spacing: -.
 .project-facts li { list-style: none; font-size: 11px; margin: 0; color: #dcdfd4; }
 .team-grid { gap: 35px; margin-top: 40px; }
 .person { border-top: 1px solid var(--rule); padding-top: 24px; }
-.initials { display: block; color: var(--accent); font: italic 27px Georgia, serif; margin-bottom: 23px; }
+.portrait { display: block; width: 72px; height: 72px; margin-bottom: 23px; object-fit: cover; background: #e7e5da; }
 .person h3 { font-size: 18px; letter-spacing: -.3px; margin-bottom: 12px; }
 .person p { font-size: 14px; color: var(--muted); margin-bottom: 0; }
 .closing { display: flex; align-items: center; justify-content: space-between; gap: 24px; border-top: 1px solid var(--rule); padding-block: 34px; }
@@ -81,7 +81,7 @@ h2 { font-size: clamp(2rem, 4vw, 2.65rem); line-height: 1.15; letter-spacing: -.
   .project-ownership { max-width: none; }
   .project-link { padding-top: 0; }
   .team-grid { grid-template-columns: 1fr; gap: 30px; }
-  .initials { margin-bottom: 15px; }
+  .portrait { margin-bottom: 15px; }
   .closing { align-items: start; flex-direction: column; gap: 15px; }
   .site-footer { flex-wrap: wrap; gap: 12px 22px; }
   .site-footer p { flex: 1 1 60%; text-align: right; }

@@ -8,7 +8,7 @@ Static company website, built with HTML and [Pico CSS](https://picocss.com/) 2.1
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8000. Edit copy in `index.html` and styles in `assets/site.css`. Team bios summarize public LinkedIn information; source notes live in local context.
+Open http://127.0.0.1:8000. Edit copy in `index.html` and styles in `assets/site.css`. Team bios summarize public LinkedIn information and portraits in `assets/team/` come from the same public profiles; source notes live in local context.
 
 ## Publish
 

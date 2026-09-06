@@ -93,3 +93,18 @@ h2 { font-size: clamp(2rem, 4vw, 2.65rem); line-height: 1.15; letter-spacing: -.
 }
 
 .profile-link { display: inline-block; margin-top: 15px; font-size: 12px; }
+
+.company-section { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; border-top: 1px solid var(--rule); padding-block: 48px; margin: 0; }
+.company-section .eyebrow { margin-bottom: 15px; }
+.company-section h2 { font-size: 30px; margin-bottom: 12px; }
+.company-intro { font-size: 14px; color: var(--muted); margin-bottom: 0; }
+.company-details { margin: 0; font-size: 14px; }
+.company-details > div { display: grid; grid-template-columns: 145px 1fr; gap: 20px; margin-bottom: 17px; }
+.company-details > div:last-child { margin-bottom: 0; }
+.company-details dt { font-weight: 400; color: var(--muted); }
+.company-details dd { margin: 0; color: var(--ink); }
+.company-details address { margin: 0; font-style: normal; }
+@media (max-width: 767px) {
+  .company-section { grid-template-columns: 1fr; gap: 30px; padding-block: 36px; }
+  .company-details > div { grid-template-columns: 1fr; gap: 3px; }
+}

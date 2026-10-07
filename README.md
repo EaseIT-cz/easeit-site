@@ -11,3 +11,7 @@ The site is live at https://www.easeit.cz. The custom domain is pinned by the `C
 For other static hosts, upload **only `index.html`, `404.html`, and `assets/`** to your static hosting directory. Do not publish the repository root, which contains local context and Git metadata. `index.html` uses relative asset URLs and still works under a subdirectory, but `404.html` references `/assets/...` from the root, because the host serves it for unknown paths at any depth. The `og:` and `canonical` tags likewise hardcode `https://www.easeit.cz/`, since both require absolute URLs.
 
 Team bios summarize public LinkedIn information, and the portraits in `assets/team/` come from the same public profiles. Pico CSS is vendored in `assets/vendor/` with its MIT license. Local working context is indexed in `.context/README.md` and intentionally ignored by Git. Shared agent guidance is in `AGENTS.md`.
+
+## Brand
+
+Logo, colours and type follow the EaseIT Labs Brand Manual v1.2 (October 2026). `assets/brand-tokens.css`, the self-hosted fonts in `assets/fonts/` (Space Grotesk and Manrope, SIL OFL 1.1, licences alongside), the favicons, `og-image.png` and `vornik-logo-white.svg` are copies from the brand kit in the Vornik repository (`docs/marketing/brand/kit/`); change them there first, then copy. Fonts are served from this site, so no request goes to Google Fonts.
